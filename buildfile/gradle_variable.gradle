@@ -1,0 +1,10 @@
+android {
+    buildTypes {
+        debug {
+            buildConfigField "String", "URL", '"https://rickandmortyapi.com/api/"'
+        }
+        release {
+            buildConfigField "String", "URL", '"https://rickandmortyapi.com/api/"'
+        }
+    }
+}

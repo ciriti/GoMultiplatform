@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion rootProject.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        applicationId "com.rickandmorty"
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+}
+
+// dependencies
+apply from: rootDir.path + '/buildfile/gradle_variable.gradle'
+apply from: rootDir.path + '/buildfile/shared_dependencies.gradle'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(":datalayer")
+
+    implementation Libs.android_arch_lifecycle_extensions
+
+    // design
+    implementation Libs.appcompat
+    implementation Libs.core_ktx
+    implementation Libs.constraintlayout
+    implementation Libs.material
+    implementation Libs.cardview
+
+    // di
+    implementation Libs.koin_core
+    implementation Libs.koin_android_viewmodel
+
+    implementation "com.github.bumptech.glide:glide:4.2.0"
+
+}

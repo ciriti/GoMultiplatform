@@ -1,0 +1,15 @@
+dependencies {
+    // kotlin
+    implementation Libs.kotlin_stdlib_jdk7
+    implementation Libs.kotlinx_coroutines_android
+
+    // retrofit
+    implementation Libs.retrofit
+    implementation Libs.converter_gson
+    implementation Libs.logging_interceptor
+    implementation Libs.okhttp
+    implementation Libs.retrofit2_kotlin_coroutines_adapter
+
+    // arrow
+    implementation Libs.arrow_core
+}
