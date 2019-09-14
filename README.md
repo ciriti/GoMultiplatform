@@ -5,3 +5,7 @@ There are two branches:
 - multiplatform
 
 The first is the initial android application, the second hat the Km module.
+
+To compile and generate the Ios framework execute the command
+
+` ./gradlew packForXCodeCommCode ` 
