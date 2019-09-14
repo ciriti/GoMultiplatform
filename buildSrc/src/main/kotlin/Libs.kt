@@ -8,6 +8,128 @@ import kotlin.String
  * to update this file */
 object Libs {
 
+
+    /**
+     * [kotlinx-serialization-runtime-native website](0.11.1-1.3.40-eap-107)
+     */
+    const val kotlinx_serialization_runtime_native: String =
+        "org.jetbrains.kotlinx:kotlinx-serialization-runtime-native:" +
+                Versions.kotlinx_serialization_runtime_native
+
+    /**
+     * [ktor-client-serialization-iosx64 website](https://github.com/ktorio/ktor)
+     */
+    const val ktor_client_serialization_iosx64: String =
+        "io.ktor:ktor-client-serialization-iosx64:" + Versions.ktor_client_serialization_iosx64
+
+    /**
+     * [ktor-client-json-native website](1.2.2)
+     */
+    const val ktor_client_json_native: String = "io.ktor:ktor-client-json-native:" +
+            Versions.ktor_client_json_native
+
+    /**
+     * [ktor-client-ios website](https://github.com/ktorio/ktor)
+     */
+    const val io_ktor_ktor_client_ios: String = "io.ktor:ktor-client-ios:" +
+            Versions.io_ktor_ktor_client_ios
+
+    /**
+     * [kotlinx-coroutines-core-native website](1.2.2)
+     */
+    const val kotlinx_coroutines_core_native: String =
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core-native:" +
+                Versions.kotlinx_coroutines_core_native
+
+    /**
+     * [ktor-client-android website](https://github.com/ktorio/ktor)
+     */
+    const val io_ktor_ktor_client_android: String = "io.ktor:ktor-client-android:" +
+            Versions.io_ktor_ktor_client_android
+
+    /**
+     * [ktor-client-okhttp website](https://github.com/ktorio/ktor)
+     */
+    const val io_ktor_ktor_client_okhttp: String = "io.ktor:ktor-client-okhttp:" +
+            Versions.io_ktor_ktor_client_okhttp
+
+    /**
+     * [ktor-client-json-jvm website](https://github.com/ktorio/ktor)
+     */
+    const val io_ktor_ktor_client_json_jvm: String = "io.ktor:ktor-client-json-jvm:" +
+            Versions.io_ktor_ktor_client_json_jvm
+
+    /**
+     * [ktor-client-core-jvm website](https://github.com/ktorio/ktor)
+     */
+    const val io_ktor_ktor_client_core_jvm: String = "io.ktor:ktor-client-core-jvm:" +
+            Versions.io_ktor_ktor_client_core_jvm
+
+    /**
+     * [kotlinx-serialization-runtime website](https://github.com/Kotlin/kotlinx.serialization)
+     */
+    const val kotlinx_serialization_runtime: String =
+        "org.jetbrains.kotlinx:kotlinx-serialization-runtime:" +
+                Versions.kotlinx_serialization_runtime
+
+    /**
+     * [ktor-client-serialization-jvm website](https://github.com/ktorio/ktor)
+     */
+    const val io_ktor_ktor_client_serialization_jvm: String =
+        "io.ktor:ktor-client-serialization-jvm:" +
+                Versions.io_ktor_ktor_client_serialization_jvm
+
+    /**
+     * [kotlin-stdlib website](https://kotlinlang.org/)
+     */
+    const val kotlin_stdlib: String = "org.jetbrains.kotlin:kotlin-stdlib:" + Versions.kotlin_stdlib
+
+
+    /**
+     * [ktor-client-serialization website](https://github.com/ktorio/ktor)
+     */
+    const val io_ktor_ktor_client_serialization: String = "io.ktor:ktor-client-serialization:" +
+            Versions.io_ktor_ktor_client_serialization
+
+    /**
+     * [ktor-client-json website](https://github.com/ktorio/ktor)
+     */
+    const val io_ktor_ktor_client_json: String = "io.ktor:ktor-client-json:" +
+            Versions.io_ktor_ktor_client_json
+
+    /**
+     * [ktor-client-core website](https://github.com/ktorio/ktor)
+     */
+    const val io_ktor_ktor_client_core: String = "io.ktor:ktor-client-core:" +
+            Versions.io_ktor_ktor_client_core
+
+    /**
+     * [kotlinx-serialization-runtime-common
+     * website](https://github.com/Kotlin/kotlinx.serialization)
+     */
+    const val kotlinx_serialization_runtime_common: String =
+        "org.jetbrains.kotlinx:kotlinx-serialization-runtime-common:" +
+                Versions.kotlinx_serialization_runtime_common
+
+    /**
+     * [kotlinx-coroutines-core website](https://github.com/Kotlin/kotlinx.coroutines)
+     */
+    const val kotlinx_coroutines_core: String = "org.jetbrains.kotlinx:kotlinx-coroutines-core:" +
+            Versions.kotlinx_coroutines_core
+
+    /**
+     * [kotlinx-coroutines-core-common website](https://github.com/Kotlin/kotlinx.coroutines)
+     */
+    const val kotlinx_coroutines_core_common: String =
+        "org.jetbrains.kotlinx:kotlinx-coroutines-core-common:" +
+                Versions.kotlinx_coroutines_core_common
+
+    /**
+     * [kotlin-stdlib-common website](https://kotlinlang.org/)
+     */
+    const val kotlin_stdlib_common: String = "org.jetbrains.kotlin:kotlin-stdlib-common:" +
+            Versions.kotlin_stdlib_common
+
     /**
      * [material website](http://developer.android.com/tools/extras/support-library.html) */
     const val material: String = "com.google.android.material:material:" + Versions.material

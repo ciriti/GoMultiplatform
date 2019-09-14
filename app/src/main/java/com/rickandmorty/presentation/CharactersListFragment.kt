@@ -34,8 +34,8 @@ class CharactersListFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         charactersList.configureLayoutManager()
         charactersList.adapter = adapter
-        viewModel.liveData.observe(this, Observer{ resultHandler(it) })
-        viewModel.fetchCharacters(1)
+        viewModel.liveData.observe(viewLifecycleOwner, Observer{ resultHandler(it) })
+        viewModel.fetchCharactersMp(1)
     }
 
     private fun resultHandler(state : BaseState){

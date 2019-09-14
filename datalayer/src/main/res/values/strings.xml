@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">datalayer</string>
+    <string name="action_settings">Datalayer</string>
+
 </resources>

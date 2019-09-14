@@ -3,9 +3,9 @@ package com.rickandmorty.core
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.datalayer.net.Result
 import com.rickandmorty.R
 import kotlin.properties.Delegates
+import com.rickandmorty.kmp.net.Result
 
 /**
  * Created by Carmelo Iriti

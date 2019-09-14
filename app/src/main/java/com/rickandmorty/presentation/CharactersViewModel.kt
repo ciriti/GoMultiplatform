@@ -1,22 +1,22 @@
 package com.rickandmorty.presentation
 
 import androidx.lifecycle.MutableLiveData
-import com.datalayer.repository.CharactersRepo
-import com.datalayer.net.CharactersResponse
-import com.datalayer.net.Result
 import com.rickandmorty.core.BaseViewModel
+import com.rickandmorty.kmp.UseCaseMp
+import com.rickandmorty.kmp.net.CharactersResponse
 import com.rickandmorty.presentation.BaseState.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import kotlin.coroutines.CoroutineContext
+import com.rickandmorty.kmp.net.Result
 
 /**
  * Created by Carmelo Iriti
  */
 
 open class CharactersViewModel(
-    private val charactersRepo: CharactersRepo,
+    private val useCaseMp: UseCaseMp,
     dispatcher: CoroutineContext = Dispatchers.Main
 ) : BaseViewModel(dispatcher){
 
@@ -25,17 +25,19 @@ open class CharactersViewModel(
             .apply { value = StateCharacters(emptyList()) }
     }
 
-    fun fetchCharacters(page : Int){
+    fun fetchCharactersMp(page : Int){
         launch(job) {
-            withContext(Dispatchers.IO) { charactersRepo.getCharacters(page) }.fold(
+            println("thrname: ${Thread.currentThread().name}")
+            withContext(Dispatchers.IO) { useCaseMp.getCharacters(page) }.fold(
                 ::onError,
-                ::onSuccess
+                ::onSuccessMp
             )
         }
     }
 
-    private fun onSuccess(data : CharactersResponse){
-        liveData.value = StateCharacters(data.results?: emptyList())
+    private fun onSuccessMp(data : CharactersResponse){
+        val list = data.results.map { it.toResponse() }
+        liveData.value = StateCharacters(list)
     }
 
     private fun onError(error : Throwable){
@@ -43,6 +45,13 @@ open class CharactersViewModel(
     }
 
 }
+
+fun Result.toResponse() = Result(
+    id = id,
+    image = image,
+    name = name,
+    status = status
+)
 
 sealed class BaseState{
     data class StateCharacters(val list: List<Result>) : BaseState()

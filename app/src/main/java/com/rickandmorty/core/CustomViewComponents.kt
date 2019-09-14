@@ -4,7 +4,7 @@ import android.content.Context
 import android.util.AttributeSet
 import android.widget.ImageView
 import androidx.cardview.widget.CardView
-import com.datalayer.net.Result
+import com.rickandmorty.kmp.net.Result
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import kotlinx.android.synthetic.main.row_character.view.*

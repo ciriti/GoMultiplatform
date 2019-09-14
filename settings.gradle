@@ -1,1 +1,7 @@
-include ':app', ':datalayer'
+include ':app'//, ':datalayer'
+
+// TODO 2. add the module
+
+include ':commoncode'
+
+enableFeaturePreview('GRADLE_METADATA')

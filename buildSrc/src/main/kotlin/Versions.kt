@@ -8,6 +8,44 @@ import kotlin.String
  * YOU are responsible for updating manually the dependency version. */
 object Versions {
 
+    const val kotlinx_serialization_runtime_native: String = "0.11.0"
+
+    const val ktor_client_serialization_iosx64: String = "1.2.2"
+
+    const val ktor_client_json_native: String = "1.2.2"
+
+    const val io_ktor_ktor_client_ios: String = "1.2.2" //available: "1.2.2"
+
+    const val kotlinx_coroutines_core_native: String = "1.2.2"
+
+    const val io_ktor_ktor_client_android: String = "1.2.2" //available: "1.2.2"
+
+    const val io_ktor_ktor_client_okhttp: String = "1.2.2" //available: "1.2.2"
+
+    const val io_ktor_ktor_client_json_jvm: String = "1.2.2" //available: "1.2.2"
+
+    const val io_ktor_ktor_client_core_jvm: String = "1.2.2" //available: "1.2.2"
+
+    const val kotlinx_serialization_runtime: String = "0.11.0" //available: "0.11.1-1.3.40-eap-107"
+
+    const val io_ktor_ktor_client_serialization_jvm: String = "1.2.2" //available: "1.2.2"
+
+    const val kotlin_stdlib: String = "1.3.50"
+
+    const val io_ktor_ktor_client_serialization: String = "1.2.2" //available: "1.2.2"
+
+    const val io_ktor_ktor_client_json: String = "1.2.2"
+
+    const val io_ktor_ktor_client_core: String = "1.2.2"
+
+    const val kotlinx_serialization_runtime_common: String = "0.11.0" //available: "0.11.1-1.3.40-eap-107"
+
+    const val kotlinx_coroutines_core: String = "1.3.1" //available: "1.3.1"
+
+    const val kotlinx_coroutines_core_common: String = "1.3.1" //available: "1.3.1"
+
+    const val kotlin_stdlib_common: String = "1.3.50" //available: "1.3.50-eap-2"
+
     const val material: String = "1.0.0"
 
     const val core_testing: String = "1.1.1" 
@@ -56,9 +94,9 @@ object Versions {
 
     const val junit_junit: String = "4.12" 
 
-    const val org_jetbrains_kotlin: String = "1.3.41" 
+    const val org_jetbrains_kotlin: String = "1.3.50"
 
-    const val kotlinx_coroutines_android: String = "1.2.1" //available: "1.2.2"
+    const val kotlinx_coroutines_android: String = "1.3.1" //available: "1.3.1"
 
     const val org_koin: String = "2.0.1"
 

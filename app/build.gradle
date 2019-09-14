@@ -29,6 +29,12 @@ android {
         // but continue the build even when errors are found:
         abortOnError false
     }
+
+    packagingOptions {
+        exclude 'META-INF/*.kotlin_module'
+        exclude 'META-INF/ktor-http.kotlin_module'
+        exclude 'META-INF/ktor-client-serialization.kotlin_module'
+    }
 }
 
 // dependencies
@@ -37,7 +43,8 @@ apply from: rootDir.path + '/buildfile/shared_dependencies.gradle'
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation project(":datalayer")
+//    implementation project(":datalayer")
+    implementation project(":commoncode")
 
     implementation Libs.android_arch_lifecycle_extensions
 
