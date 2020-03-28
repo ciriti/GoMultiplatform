@@ -1,8 +1,9 @@
 package com.rickandmorty.kmp.net
 
 import com.arrow.core.MpTry
-import io.ktor.client.response.HttpResponse
 import io.ktor.client.response.readText
+import io.ktor.client.statement.HttpResponse
+import io.ktor.client.statement.readText
 import kotlinx.serialization.KSerializer
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.Json

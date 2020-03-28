@@ -1,4 +1,4 @@
-package com.rickandmorty.kmp
+package com.rickandmorty.kmp.usecase
 
 import com.arrow.core.MpTry
 import com.rickandmorty.kmp.net.CharactersResponse
@@ -33,7 +33,7 @@ private class UseCaseMpImpl(
     val ds: CharactersRepoMp = CharactersRepoMp.create()
 ) : UseCaseMp {
 
-    val scope by lazy { MainScope() }
+    val scope by lazy { com.rickandmorty.kmp.MainScope() }
 
     override suspend fun getCharacters(page: Int): MpTry<CharactersResponse> = coroutineScope {
         ds.getCharacters(page)

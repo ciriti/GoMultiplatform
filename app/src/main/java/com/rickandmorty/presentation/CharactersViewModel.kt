@@ -2,7 +2,7 @@ package com.rickandmorty.presentation
 
 import androidx.lifecycle.MutableLiveData
 import com.rickandmorty.core.BaseViewModel
-import com.rickandmorty.kmp.UseCaseMp
+import com.rickandmorty.kmp.usecase.UseCaseMp
 import com.rickandmorty.kmp.net.CharactersResponse
 import com.rickandmorty.presentation.BaseState.*
 import kotlinx.coroutines.Dispatchers

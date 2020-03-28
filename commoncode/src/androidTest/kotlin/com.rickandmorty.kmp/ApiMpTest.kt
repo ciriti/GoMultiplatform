@@ -4,6 +4,8 @@ import com.arrow.core.MpTry
 import com.rickandmorty.kmp.net.CharactersResponse
 import com.rickandmorty.kmp.repository.CharactersRepoMp
 import com.rickandmorty.kmp.repository.create
+import com.rickandmorty.kmp.usecase.UseCaseMp
+import com.rickandmorty.kmp.usecase.create
 import io.mockk.*
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.runBlocking
@@ -35,7 +37,7 @@ class ApiMpTest {
         val res = CharactersResponse()
         every { mockSuccess(any()) } answers {}
         coEvery { mock.getCharacters(1) } returns MpTry{ res }
-        val uc : UseCaseMp= UseCaseMp.create(ds = mock)
+        val uc : UseCaseMp = UseCaseMp.create(ds = mock)
         val job = uc.getCharacters(
             page = 1,
             success = mockSuccess,
@@ -56,7 +58,7 @@ class ApiMpTest {
         val mockFailure = mockk<(Throwable) -> Unit>()
         every { mockFailure(any()) } answers {}
         coEvery { mock.getCharacters(1) } returns MpTry.raise(RuntimeException())
-        val uc : UseCaseMp= UseCaseMp.create(ds = mock)
+        val uc : UseCaseMp = UseCaseMp.create(ds = mock)
         val model = uc.getCharacters(
             page = 1,
             success = mockSuccess,

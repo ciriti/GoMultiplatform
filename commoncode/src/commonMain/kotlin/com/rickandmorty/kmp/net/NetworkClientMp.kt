@@ -7,7 +7,7 @@ import io.ktor.client.engine.HttpClientEngine
 import io.ktor.client.features.json.JsonFeature
 import io.ktor.client.features.json.serializer.KotlinxSerializer
 import io.ktor.client.request.get
-import io.ktor.client.response.HttpResponse
+import io.ktor.client.statement.HttpResponse
 import io.ktor.http.HttpStatusCode
 import io.ktor.http.URLProtocol
 import kotlinx.coroutines.coroutineScope
