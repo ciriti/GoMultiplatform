@@ -8,7 +8,7 @@ import kotlin.String
  * YOU are responsible for updating manually the dependency version. */
 object Versions {
 
-    const val kotlinx_serialization_runtime_native: String = "0.11.0"
+    const val kotlinx_serialization_runtime_native: String = "0.20.0-1.4-M1-release-99"
 
     const val ktor_client_serialization_iosx64: String = "1.2.2"
 
@@ -26,7 +26,7 @@ object Versions {
 
     const val io_ktor_ktor_client_core_jvm: String = "1.2.2" //available: "1.2.2"
 
-    const val kotlinx_serialization_runtime: String = "0.11.0" //available: "0.11.1-1.3.40-eap-107"
+    const val kotlinx_serialization_runtime: String = "0.20.0-1.4-M1-release-99" //available: "0.11.1-1.3.40-eap-107"
 
     const val io_ktor_ktor_client_serialization_jvm: String = "1.2.2" //available: "1.2.2"
 
@@ -38,7 +38,7 @@ object Versions {
 
     const val io_ktor_ktor_client_core: String = "1.2.2"
 
-    const val kotlinx_serialization_runtime_common: String = "0.11.0" //available: "0.11.1-1.3.40-eap-107"
+    const val kotlinx_serialization_runtime_common: String = "0.20.0-1.4-M1-release-99" //available: "0.11.1-1.3.40-eap-107"
 
     const val kotlinx_coroutines_core: String = "1.3.1" //available: "1.3.1"
 
@@ -54,7 +54,7 @@ object Versions {
 
     const val cardview: String = "1.0.0"
 
-    const val constraintlayout: String = "2.0.0-beta2" // exceed the version found: 1.1.3
+    const val constraintlayout: String = "2.0.0-beta4" // exceed the version found: 1.1.3
 
     const val core_ktx: String = "1.0.2"
 

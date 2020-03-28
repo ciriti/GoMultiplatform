@@ -20,7 +20,7 @@ kotlin {
         fromPreset(iOSTarget, 'ios') {
             binaries {
                 framework('CommonCode'){
-                    freeCompilerArgs.add("-Xobjc-generics")
+                    freeCompilerArgs += "-Xno-objc-generics"
                 }
             }
         }
