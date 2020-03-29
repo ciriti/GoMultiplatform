@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import CommonCode
+import commoncode
 import SDWebImage
 
 class ViewController: UIViewController {

@@ -8,9 +8,9 @@
 
 import UIKit
 import SDWebImage
-import CommonCode
+import commoncode
 
-typealias CommonResult = CommonCode.Result
+typealias CommonResult = commoncode.Result
 class CharacterTableViewController: UIViewController {
     
     @IBOutlet var characters: UICollectionView!

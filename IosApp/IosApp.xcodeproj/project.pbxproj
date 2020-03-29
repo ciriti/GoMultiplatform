@@ -16,8 +16,6 @@
 		8DA2561823127C6D00FD2639 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DA2561623127C6D00FD2639 /* LaunchScreen.storyboard */; };
 		8DA2562323127C6D00FD2639 /* IosAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA2562223127C6D00FD2639 /* IosAppTests.swift */; };
 		8DA2562E23127C6D00FD2639 /* IosAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA2562D23127C6D00FD2639 /* IosAppUITests.swift */; };
-		8DA2563C23127CE100FD2639 /* CommonCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DA2563B23127CE100FD2639 /* CommonCode.framework */; };
-		8DA2563D23127CE100FD2639 /* CommonCode.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8DA2563B23127CE100FD2639 /* CommonCode.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8DA2564123127F7B00FD2639 /* DeferredExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA2564023127F7B00FD2639 /* DeferredExtension.swift */; };
 		8DEB91A0231EB4D000C0C78E /* RMCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DEB919F231EB4D000C0C78E /* RMCell.xib */; };
 		8DEB91A2231FFD1400C0C78E /* CharacterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DEB91A1231FFD1400C0C78E /* CharacterCell.xib */; };
@@ -41,20 +39,6 @@
 			remoteInfo = IosApp;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		8DA2563E23127CE100FD2639 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				8DA2563D23127CE100FD2639 /* CommonCode.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		31EE9DD48CD05C2DAF791A8C /* Pods-IosAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosAppTests.debug.xcconfig"; path = "Target Support Files/Pods-IosAppTests/Pods-IosAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -91,7 +75,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DA2563C23127CE100FD2639 /* CommonCode.framework in Frameworks */,
 				9B5C3332D6A8C1CEAD8CDC02 /* Pods_IosApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,7 +191,6 @@
 				8DA2560623127C6B00FD2639 /* Sources */,
 				8DA2560723127C6B00FD2639 /* Frameworks */,
 				8DA2560823127C6B00FD2639 /* Resources */,
-				8DA2563E23127CE100FD2639 /* Embed Frameworks */,
 				BDF96074BB28D107D0AEC657 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
@@ -390,7 +372,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncd \"$SRCROOT/..\"\npwd\n./gradlew :commoncode:packForXCodeCommCode -PXCODE_CONFIGURATION=${CONFIGURATION}\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
 		};
 		BDF96074BB28D107D0AEC657 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -624,7 +606,6 @@
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxRelay\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxCocoa\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxRelay\"",
-					"$(SRCROOT)/../commoncode/build/xcode-frameworks",
 				);
 				INFOPLIST_FILE = IosApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -650,7 +631,6 @@
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxRelay\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxCocoa\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxRelay\"",
-					"$(SRCROOT)/../commoncode/build/xcode-frameworks",
 				);
 				INFOPLIST_FILE = IosApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -9,6 +9,7 @@ target 'IosApp' do
     pod 'SDWebImage'
     pod 'RxSwift', '~> 5'
     pod 'RxCocoa', '~> 5'
+    pod 'commoncode', :path => "../commoncode"
 
   target 'IosAppTests' do
     inherit! :search_paths

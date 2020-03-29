@@ -1,4 +1,5 @@
 PODS:
+  - commoncode (1.0)
   - RxCocoa (5.0.0):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
@@ -10,23 +11,29 @@ PODS:
   - SDWebImage/Core (5.1.0)
 
 DEPENDENCIES:
+  - commoncode (from `../commoncode`)
   - RxCocoa (~> 5)
   - RxSwift (~> 5)
   - SDWebImage
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - RxCocoa
     - RxRelay
     - RxSwift
     - SDWebImage
 
+EXTERNAL SOURCES:
+  commoncode:
+    :path: "../commoncode"
+
 SPEC CHECKSUMS:
+  commoncode: bcd37ef84bfc359a1d639de6070bba08dc002924
   RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
   RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
   RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
   SDWebImage: fb387001955223213dde14bc08c8b73f371f8d8f
 
-PODFILE CHECKSUM: 6c4e5affa7bcb2e1b6da0886fbaaba1830e5e90f
+PODFILE CHECKSUM: bfaee5b4a5d25ff31d03e7d44e5633413a36943a
 
-COCOAPODS: 1.7.4
+COCOAPODS: 1.9.1
